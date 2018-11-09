@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
  <head>
-   <title>Page 2</title>
+   <title>Results</title>
    <#include "head.ftl" />
  </head>
  <body>
    <#include "navbar.ftl" />
-   <h1>This is Page 2</h1>
-  <p>What, you were expecting something awesome?</p>
+   <h1>Here are some results we found!</h1>
+  <p>On this page, the user will see the results that were found from their item description.</p>
  </body>
 </html>
