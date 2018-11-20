@@ -21,7 +21,15 @@
 	<dependency>
           <groupId>org.springframework.boot</groupId>
           <artifactId>spring-boot-starter-freemarker</artifactId>
-	</dependency>          
+	</dependency>  
+
+<!-- adding the following from tutorial  -->
+    <dependency>
+        <groupId>org.mongodb</groupId>
+        <artifactId>mongo-java-driver</artifactId>
+        <version>3.8.1</version>
+    </dependency>        
+
     </dependencies>
 
     <properties>
