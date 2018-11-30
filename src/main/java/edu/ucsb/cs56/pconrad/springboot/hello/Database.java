@@ -1,4 +1,6 @@
 //database
+
+//added this package from conrad 
 package edu.ucsb.cs56.pconrad.springboot.hello;
 
 /*
@@ -38,6 +40,21 @@ public class Database {
         
         List<Document> seedData = new ArrayList<Document>();
 
+        //use this template format to store data into the mlab database 
+        //create a new document for each new entry 
+
+        seedData.add(new Document("decade", "2000s")
+        .append("artist", "Porter Robinson")
+        .append("song", "Years of War")
+        .append("weeksAtOne", 1000)
+        );
+
+        seedData.add(new Document("decade", "2000s")
+            .append("artist", "Madeon")
+            .append("song", "Pay No Mind")
+            .append("weeksAtOne", 1000)
+        );
+
         seedData.add(new Document("decade", "1970s")
             .append("artist", "Debby Boone")
             .append("song", "You Light Up My Life")
@@ -76,6 +93,7 @@ public class Database {
          * songs collection; it is created automatically when we insert.
          */
         
+         //this line accesses the collection called "songs" on mlab
         MongoCollection<Document> songs = db.getCollection("songs");
         
         /*
