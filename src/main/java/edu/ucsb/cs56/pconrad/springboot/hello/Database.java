@@ -55,6 +55,19 @@ public class Database {
             .append("weeksAtOne", 1000)
         );
 
+        seedData.add(new Document("decade", "2000s")
+            .append("artist", "Singer")
+            .append("song", "Pop Song")
+            .append("weeksAtOne", 5)
+        );
+
+        seedData.add(new Document("decade", "2000s")
+            .append("artist", "Giraffage")
+            .append("song", "Bring Me Your Love")
+            .append("weeksAtOne", 1000)
+        );
+
+
         seedData.add(new Document("decade", "1970s")
             .append("artist", "Debby Boone")
             .append("song", "You Light Up My Life")
